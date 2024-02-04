@@ -9,13 +9,10 @@ pigpio python3-pigpio raspi-gpio python3-rpi.gpio
 python3-spidev
 python3-smbus2
 avahi-daemon
-lua5.1
-luajit
 ca-certificates curl
 fake-hwclock nfs-common usbutils
 libraspberrypi-dev libraspberrypi-doc libfreetype6-dev
 dosfstools
-dphys-swapfile
 raspberrypi-sys-mods
 pi-bluetooth
 apt-listchanges
@@ -29,7 +26,6 @@ man-db
 policykit-1
 ssh-import-id
 ethtool
-ntfs-3g
 pciutils
 rpi-eeprom
 raspi-utils

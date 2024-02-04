@@ -1,0 +1,14 @@
+[Unit]
+Description=Screenlink Server Application
+StartLimitIntervalSec=0
+After=network.target
+
+[Service]
+Type=simple
+User=screenlink
+ExecStart=/usr/local/sbin/screenlink-server
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target

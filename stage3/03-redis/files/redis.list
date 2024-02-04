@@ -1,0 +1,2 @@
+# Redis package
+deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb RELEASE main

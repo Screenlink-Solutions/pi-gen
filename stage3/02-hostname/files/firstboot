@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+HOST_PREFIX=${HOST_PREFIX:-"screenlink-server"}
+NEW_HOSTNAME="${HOST_PREFIX}-$(openssl rand -hex 4)"
+
+echo "$NEW_HOSTNAME" > /etc/hostname
+sed -i "s/screenlink-server.*/$NEW_HOSTNAME/g" /etc/hosts
+/usr/bin/hostname -F /etc/hostname

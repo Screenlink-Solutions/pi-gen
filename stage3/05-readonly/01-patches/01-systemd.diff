@@ -1,0 +1,10 @@
+--- stage3.orig/rootfs/lib/systemd/system/systemd-random-seed.service
++++ stage3/rootfs/lib/systemd/system/systemd-random-seed.service
+@@ -22,6 +22,7 @@ ConditionPathExists=!/etc/initrd-release
+ [Service]
+ Type=oneshot
+ RemainAfterExit=yes
++ExecStartPre=/bin/echo "" >/tmp/random-seed
+ ExecStart=/lib/systemd/systemd-random-seed load
+ ExecStop=/lib/systemd/systemd-random-seed save
+ 
